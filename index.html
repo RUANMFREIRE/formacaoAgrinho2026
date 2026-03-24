@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Agrinho 2026 - Estufa de Morango</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <button onclick="showSection('simulador')">Simulador</button>
+        <button onclick="showSection('sobre-mim')">Sobre Mim</button>
+        <button onclick="showSection('concurso')">O Concurso</button>
+        <button onclick="showSection('importancia-morango')">Importância Socioeconômica</button>
+    </nav>
+
+    <main>
+        <section id="simulador" class="active">
+            <h1>Simulador de Estufa Sustentável</h1>
+            <p>Ajuste os controles para manter o ambiente ideal para os morangos.</p>
+            
+            <div class="controls">
+                <div class="control-group">
+                    <label>Temperatura: <span id="temp-val">22</span>°C</label>
+                    <input type="range" id="temp" min="10" max="40" value="22">
+                </div>
+                <div class="control-group">
+                    <label>Umidade do Ar: <span id="ar-val">60</span>%</label>
+                    <input type="range" id="ar" min="20" max="100" value="60">
+                </div>
+                <div class="control-group">
+                    <label>Umidade do Solo: <span id="solo-val">50</span>%</label>
+                    <input type="range" id="solo" min="0" max="100" value="50">
+                </div>
+            </div>
+
+            <div id="status-display" class="status-good">
+                Status: Ambiente Ideal
+            </div>
+        </section>
+
+        <section id="sobre-mim">
+            <h1>Sobre Mim</h1>
+            <p>Olá! Sou aluno do 1º ano do Ensino Médio e desenvolvi este projeto para demonstrar como a tecnologia pode auxiliar no agronegócio sustentável.</p>
+            <p>Meu objetivo é unir programação e agricultura para criar soluções inteligentes.</p>
+        </section>
+
+        <section id="concurso">
+            <h1>Concurso Agrinho 2026</h1>
+            <h3>Tema: Agroforte e Futuro Sustentável</h3>
+            <div class="foto-placeholder">
+                <p>[Anexe aqui a foto do concurso agrinho.jpg]</p>
+                </div>
+            <p>O Programa Agrinho incentiva o desenvolvimento de propostas que melhorem a qualidade de vida no campo através da educação.</p>
+        </section>
+
+        <section id="importancia-morango">
+            <h1>Importância Socioeconômica do Morango</h1>
+            <h2>Impacto Econômico</h2>
+            <p>O cultivo de morango é uma atividade agrícola de grande relevância econômica, gerando renda significativa para pequenos e médios produtores. A maricultura brasileira de morango movimenta bilhões de reais anualmente, posicionando o Brasil como um dos principais exportadores mundiais.</p>
+            
+            <h2>Geração de Empregos</h2>
+            <p>A cadeia produtiva do morango emprega diretamente milhares de trabalhadores rurais, desde o cultivo até o processamento e distribuição. Para cada emprego direto na agricultura, estimam-se 3 a 4 empregos indiretos em setores como transporte, embalagem e comercialização.</p>
+            
+            <h2>Benefícios Sociais</h2>
+            <ul>
+                <li><strong>Fixação do homem no campo:</strong> Gera oportunidades que reduzem o êxodo rural</li>
+                <li><strong>Segurança alimentar:</strong> Produção de alimento nutritivo e acessível</li>
+                <li><strong>Desenvolvimento de comunidades locais:</strong> Estimula investimentos em infraestrutura rural</li>
+                <li><strong>Inclusão de pequenos produtores:</strong> Permite que famílias tenham renda garantida</li>
+            </ul>
+            
+            <h2>Sustentabilidade Econômica</h2>
+            <p>A produção de morango em estufas sustentáveis combina lucratividade com responsabilidade ambiental. O uso de tecnologias limpas, como irrigação eficiente e controle biológico de pragas, mantém os custos reduzidos enquanto protege o meio ambiente e garante a viabilidade econômica a longo prazo.</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
